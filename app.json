@@ -1,0 +1,58 @@
+{
+  "configVersion": "v3",
+  "app": {
+    "appId": 1072512,
+    "appName": "Luv Sync",
+    "appType": "app",
+    "version": {
+      "code": 3,
+      "name": "0.2.0"
+    },
+    "icon": "icon.png",
+    "vender": "luvsync",
+    "description": "Фоновая служба: обновляет цвета полосок на циферблате Luv Face"
+  },
+  "permissions": [
+    "device:os.bg_service",
+    "device:os.local_storage"
+  ],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "3.6",
+      "target": "3.6",
+      "minVersion": "3.6"
+    }
+  },
+  "targets": {
+    "default": {
+      "module": {
+        "page": {
+          "pages": [
+            "page/index"
+          ]
+        },
+        "app-service": {
+          "services": [
+            "app-service/sync"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "st": "s",
+          "sr": "w432"
+        }
+      ],
+      "designWidth": 432
+    }
+  },
+  "i18n": {
+    "en-US": {
+      "appName": "Luv Sync"
+    },
+    "ru-RU": {
+      "appName": "Luv Sync"
+    }
+  },
+  "defaultLanguage": "en-US"
+}

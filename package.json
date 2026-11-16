@@ -1,0 +1,10 @@
+{
+  "name": "luv-sync",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Luv Sync для Amazfit (Zepp OS): обновляет цвета полосок на циферблате Luv Face",
+  "scripts": {
+    "build": "zeus build",
+    "test": "node tests/link.test.mjs && node tests/page.test.mjs && node tests/service.test.mjs"
+  }
+}
